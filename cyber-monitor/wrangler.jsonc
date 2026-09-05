@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "nextdns-cyber-monitor",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-05",
+  "observability": { "enabled": true },
+  "triggers": { "crons": ["*/5 * * * *"] },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "nextdns-cyber-monitor",
+      "database_id": "0e348a0c-f90f-476e-b0d7-633e42d39753"
+    }
+  ]
+}
